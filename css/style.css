@@ -193,7 +193,6 @@ p {
 }
 
 /* features */
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -203,13 +202,26 @@ p {
   line-height: 1.71;
 }
 
-.features.container {
+.features.list {
   display: flex;
   align-items: center;
 }
 
-.features.list:not(:last-child) {
+.features.item:not(:last-child) {
   margin-right: 30px;
+}
+
+.features-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-icon .icon {
+  margin: auto;
 }
 
 .features .title {
