@@ -74,6 +74,17 @@ p {
   padding-right: 15px;
 }
 
+.icon {
+  display: inline-flex;
+  margin: auto;
+  fill: currentColor;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* logo */
 
 .logo {
@@ -198,10 +209,6 @@ p {
 }
 
 /* features */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .features {
   line-height: 1.71;
@@ -328,17 +335,15 @@ p {
   width: 20px;
 }
 
-.icon {
-  display: inline-flex;
-  margin: auto;
-  fill: currentColor;
-}
-
 /* clients */
 
 .clients {
   display: flex;
   justify-content: center;
+}
+
+use {
+  display: block;
 }
 
 .clients > li {
@@ -358,6 +363,7 @@ p {
 .clients > li:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* footer */
