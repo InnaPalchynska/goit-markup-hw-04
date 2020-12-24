@@ -115,7 +115,7 @@ p {
 }
 
 .site-nav .link {
-  display: block;
+  display: inline-flex;
 
   color: var(--title-text-color);
 
@@ -138,6 +138,10 @@ p {
 
 .contacts .link {
   color: inherit;
+}
+
+.contacts .icon {
+  margin-right: 10px;
 }
 
 .site-nav.contacts {
@@ -325,7 +329,7 @@ p {
 }
 
 .icon {
-  display: block;
+  display: inline-flex;
   margin: auto;
   fill: currentColor;
 }
@@ -338,13 +342,22 @@ p {
 }
 
 .clients > li {
-  display: block;
+  display: inline-flex;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  margin: auto;
+}
+
+.clients > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients > li:hover,
+.clients > li:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* footer */
