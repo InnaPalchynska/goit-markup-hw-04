@@ -347,16 +347,6 @@ p {
   margin: auto;
 }
 
-/* .clients .link {
-  display: inline-flex;
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-  margin: auto;
-} */
-
 /* footer */
 
 .footer {
@@ -369,12 +359,17 @@ p {
   padding-bottom: 60px;
 }
 
+.footer .container {
+  display: flex;
+}
+
 .logo.footer {
   display: block;
 }
 
 .footer.contacts {
   margin-top: 20px;
+  margin-right: 72px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -389,7 +384,16 @@ address {
 }
 
 .join {
-  display: flex;
+  margin-top: 12px;
+}
+
+.join .title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.join .link {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* portfolio */
