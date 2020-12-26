@@ -169,8 +169,11 @@ p {
 
 .hero {
   max-width: 1600px;
-  background: rgba(47, 48, 58, 0.4);
-  background-image: url('../images/hero.jpg');
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero.jpg');
   background-color: #c4c4c4;
 
   padding-top: 200px;
@@ -344,15 +347,13 @@ p {
 
 .clients {
   display: flex;
-  justify-content: center;
 }
 
-.clients > li {
+.clients .link {
   display: inline-flex;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 
@@ -360,8 +361,8 @@ p {
   margin-right: 30px;
 }
 
-.clients > li:hover,
-.clients > li:focus {
+.clients .link:hover,
+.clients .link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
   cursor: pointer;
@@ -409,11 +410,18 @@ address {
 
 .join .title {
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
 .join .link {
   background: rgba(255, 255, 255, 0.1);
+}
+
+.join .icon {
+  color: var(--primary-bg-color);
 }
 
 /* portfolio */
@@ -465,6 +473,7 @@ address {
 }
 
 .portfolio .item {
+  display: block;
   width: calc((100% - 60px) / 3);
   outline: 1px solid #eeeeee;
   background-color: var(--primary-bg-color);
